@@ -1,0 +1,84 @@
+BODY {
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5 {
+    color: black;
+    font-family: arial,sans-serif;
+}
+
+caption {
+    background-color: #99CCCC;
+    color: #000000;
+    margin-bottom: 0;
+    font-family: arial,sans-serif;
+    text-align: left;
+}
+
+th {
+    color: #000099;
+    background-color : #CCCCCC;
+    font-family : arial, sans-serif;
+    font-weight: 500;
+}
+
+.caption {
+    text-align: center;
+    background-color: #99CCCC;
+    color: #000099;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: 500;
+}
+
+td {
+    color: black;
+    background-color: #FFFFCC;
+    text-align: center;
+}
+
+.info {
+    text-align: left;
+    font: 10pt Times New Roman, serif;
+}
+
+.label {
+    font-size: 14pt;
+    color: #000000;
+    font-family: arial,sans-serif;
+    text-align: left;
+    vertical-align: top;
+}
+
+ol {
+    font-family: Times New Roman, serif;
+}
+
+ol.SecondOrder {
+    font-family: Times New Roman, serif;
+    list-style-type: lower-alpha;
+}
+
+ol.ThirdOrder {
+    font-family: Times New Roman, serif;
+    list-style-type: lower-roman;
+}
+
+ul.SecondOrder {
+    font-family: Times New Roman, serif;
+    list-style-type: disc;
+}
+
+ul.ThirdOrder {
+    font-family: Times New Roman, serif;
+    list-style-type: circle;
+}
+
+menu {
+    font-family: Arial, sans-serif;
+}
+
+.c1 {
+    font-size: 11pt;
+    font-family: arial, helvetica, sans-serif;
+   align-content: left;
+}

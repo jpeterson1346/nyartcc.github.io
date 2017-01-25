@@ -1,0 +1,544 @@
+<HTML>
+    <HEAD>
+        <LINK rel=stylesheet type="text/css" href="/styles/ois.css">
+        <SCRIPT LANGUAGE="JavaScript">
+            <!-- Begin hiding script from older browsers
+            // Two other places are changed: Menu array, and Input My Full screenbutton
+            function y2k(number) {
+                return (number < 1000) ? number + 1900 : number;
+            }
+            function home_date() {
+                date = new Date();
+                var todays_date = date.getDate();
+                var month_number = date.getMonth();
+                var year = y2k(date.getYear());
+                // year is y2k compatible
+                var month_name = '';
+                if (month_number == 0) {
+                    month_name = 'January';
+                }
+                if (month_number == 1) {
+                    month_name = 'February';
+                }
+                if (month_number == 2) {
+                    month_name = 'March';
+                }
+                if (month_number == 3) {
+                    month_name = 'April';
+                }
+                if (month_number == 4) {
+                    month_name = 'May';
+                }
+                if (month_number == 5) {
+                    month_name = 'June';
+                }
+                if (month_number == 6) {
+                    month_name = 'July';
+                }
+                if (month_number == 7) {
+                    month_name = 'August';
+                }
+                if (month_number == 8) {
+                    month_name = 'September';
+                }
+                if (month_number == 9) {
+                    month_name = 'October';
+                }
+                if (month_number == 10) {
+                    month_name = 'November';
+                }
+                if (month_number == 11) {
+                    month_name = 'December';
+                }
+                var dateline = (month_number + 1) + '/' + todays_date + '/' + year;
+                document.write('<b><font size="+1" face="arial">' + dateline + '</font></b>');
+            }
+            // End hiding script from old browsers -->
+        </SCRIPT>
+        <!--
+    -------------------------------------------------------------------------
+                OUTLINE STYLE TABLE OF CONTENTS in JAVASCRIPT
+                                Version 2.0
+                    by Danny Goodman (dannyg@dannyg.com)
+                    Analyzed and described at length in
+                             "JavaScript Bible"
+                              by Danny Goodman
+                      (IDG Books ISBN 0-7645-3022-4)
+
+    This program is Copyright 1996 by Danny Goodman.  You may adapt
+    this outliner for your Web pages, provided these opening credit
+    lines (down to the lower dividing line) are in your outliner HTML document.
+    You may not reprint or redistribute this code without permission from
+    the author.
+    -------------------------------------------------------------------------
+     21 February 1997  Added intelligence so that clicking on a fully nested
+                       widget icon does not cause the outline to reload.
+
+     24 October 1997   Script speedup for Navigator 4, reduces access to cookie
+
+To find information specific to DevEdge, search for DevEdge.
+-->
+        <SCRIPT LANGUAGE="JavaScript1.1">
+            <!-- begin hiding
+            // ** BEGIN OUTLINE AUTHOR-ADUSTABLE SPECIFICATIONS **//
+            // size of horizontal indent per level
+            var indentPixels = 12
+            // art files and sizes for three widget styles
+            // (all three widgets must have same height/width)
+            var collapsedWidget = "/images/plus.gif"
+            var expandedWidget = "/images/minus.gif"
+            var endpointWidget = "/images/filler.gif"
+            //was end.gif
+            var widgetWidth = 11
+            var widgetHeight = 11
+            // Target for documents loaded when user clicks on a link.
+            // Specify your target frame name here.
+            var displayTarget = "main"
+            // Create array object containing outline content and attributes.
+            // To adapt outline for your use, modify this table.
+            // Start the array with [1], and continue without gaps to your last item.
+            // The order of the five parameters:
+            //    1. Boolean (true or false) whether _next_ item is indented.
+            //    2. String to display in outline entry (including <FONT> or style tags).
+            //    3. URL of link for outline entry; Use empty string ("") for no link
+            //    4. Integer of indentation level (0 is leftmost margin level)
+            //    5. String for status line during onMouseOver (apostrophes require \')
+            // THIS DEVEDGE DOCUMENT STARTS HERE
+            var documentName = "OIS Main Menu";
+            var inputArray = new Array();
+            var arrayIndex = 1;
+            inputArray[arrayIndex++] = '2::main::NAS Status::"../ois/jsp/summary_sys.jsp"';
+            inputArray[arrayIndex++] = '3::main::Flt Check::"../ois/jsp/flightcheck_sys.jsp"';
+            inputArray[arrayIndex++] = '3::main::GPS Status::"../ois/jsp/gps_dod_sys.jsp"';
+            inputArray[arrayIndex++] = '2::main::Int\'l Status::"/iois/jsp/intlsummary_sys.jsp"';
+            inputArray[arrayIndex++] = '2::main::East Directory::"/Information/east/east_dir.htm"';
+            inputArray[arrayIndex++] = '3::main::ZBW::"/Information/east/zbw/zbw.htm"';
+            inputArray[arrayIndex++] = '4::main::BDL::"/Information/east/zbw/bdl/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::BOS::"/Information/east/zbw/bos/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::MHT::"/Information/east/zbw/mht/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::PVD::"/Information/east/zbw/pvd/frames.htm"';
+            //inputArray[arrayIndex++] = '4::main::SYR::"/Information/east/zbw/syr/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZDC::"/Information/east/zdc/zdc.htm"';
+            inputArray[arrayIndex++] = '4::main::BWI::"/Information/east/zdc/bwi/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::DCA::"/Information/east/zdc/dca/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::IAD::"/Information/east/zdc/iad/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::RDU::"/Information/east/zdc/rdu/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZID::"/Information/east/zid/zid.htm"';
+            inputArray[arrayIndex++] = '4::main::CVG::"/Information/east/zid/cvg/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::DAY::"/Information/east/zid/day/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::IND::"/Information/east/zid/ind/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SDF::"/Information/east/zid/sdf/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZJX::"/Information/east/zjx/zjx.htm"';
+            inputArray[arrayIndex++] = '4::main::JAX::"/Information/east/zjx/jax/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::MCO::"/Information/east/zjx/mco/frames.htm"';
+            //inputArray[arrayIndex++] = '4::main::TPA::"/Information/east/zjx/tpa/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZMA::"/Information/east/zma/zma.htm"';
+            inputArray[arrayIndex++] = '4::main::FLL::"/Information/east/zma/fll/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::MIA::"/Information/east/zma/mia/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::PBI::"/Information/east/zma/pbi/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::RSW::"/Information/east/zma/rsw/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::TPA::"/Information/east/zma/tpa/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZNY::"/Information/east/zny/zny.htm"';
+            inputArray[arrayIndex++] = '4::main::EWR::"/Information/east/zny/ewr/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::HPN::"/Information/east/zny/hpn/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::ISP::"/Information/east/zny/isp/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::JFK::"/Information/east/zny/jfk/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::LGA::"/Information/east/zny/lga/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::PHL::"/Information/east/zny/phl/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SWF::"/Information/east/zny/swf/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::TEB::"/Information/east/zny/teb/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZOB::"/Information/east/zob/zob.htm"';
+            inputArray[arrayIndex++] = '4::main::BUF::"/Information/east/zob/buf/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::CLE::"/Information/east/zob/cle/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::DTW::"/Information/east/zob/dtw/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::PIT::"/Information/east/zob/pit/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZSU::""';
+            inputArray[arrayIndex++] = '4::main::SJU::"/Information/east/zsu/sju/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZTL::"/Information/east/ztl/ztl.htm"';
+            inputArray[arrayIndex++] = '4::main::ATL::"/Information/east/ztl/atl/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::BHM::"/Information/east/ztl/bhm/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::CLT::"/Information/east/ztl/clt/frames.htm"';
+            inputArray[arrayIndex++] = '2::main::West Directory::"/Information/west/west_dir.htm"';
+            inputArray[arrayIndex++] = '3::main::ZAB::"/Information/west/zab/zab.htm"';
+            inputArray[arrayIndex++] = '4::main::ABQ::"/Information/west/zab/abq/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::PHX::"/Information/west/zab/phx/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::TUS::"/Information/west/zab/tus/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZAN::""';
+            // ZAN::"/Information/west/zab/zab.htm"';
+            inputArray[arrayIndex++] = '4::main::ANC::"/Information/west/zan/anc/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZAU::"/Information/west/zau/zau.htm"';
+            inputArray[arrayIndex++] = '4::main::GYY::"/Information/west/zau/gyy/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::MDW::"/Information/west/zau/mdw/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::MKE::"/Information/west/zau/mke/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::ORD::"/Information/west/zau/ord/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::RFD::"/Information/west/zau/rfd/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZDV::"/Information/west/zdv/zdv.htm"';
+            inputArray[arrayIndex++] = '4::main::DEN::"/Information/west/zdv/den/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZFW::"/Information/west/zfw/zfw.htm"';
+            inputArray[arrayIndex++] = '4::main::DAL::"/Information/west/zfw/dal/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::DFW::"/Information/west/zfw/dfw/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZHN::""';
+            // ZHN::"/Information/west/zhn/zhn.htm"';
+            inputArray[arrayIndex++] = '4::main::HNL::"/Information/west/zhn/hnl/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::OGG::"/Information/west/zhn/ogg/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZHU::"/Information/west/zhu/zhu.htm"';
+            inputArray[arrayIndex++] = '4::main::AUS::"/Information/west/zhu/aus/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::HOU::"/Information/west/zhu/hou/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::IAH::"/Information/west/zhu/iah/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::MSY::"/Information/west/zhu/msy/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SAT::"/Information/west/zhu/sat/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZKC::"/Information/west/zkc/zkc.htm"';
+            inputArray[arrayIndex++] = '4::main::MCI::"/Information/west/zkc/mci/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::STL::"/Information/west/zkc/stl/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZLA::"/Information/west/zla/zla.htm"';
+            inputArray[arrayIndex++] = '4::main::BUR::"/Information/west/zla/bur/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::LAS::"/Information/west/zla/las/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::LAX::"/Information/west/zla/lax/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::LGB::"/Information/west/zla/lgb/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::ONT::"/Information/west/zla/ont/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::OXR::"/Information/west/zla/oxr/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::PSP::"/Information/west/zla/psp/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SAN::"/Information/west/zla/san/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SNA::"/Information/west/zla/sna/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::VNY::"/Information/west/zla/vny/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZLC::"/Information/west/zlc/zlc.htm"';
+            inputArray[arrayIndex++] = '4::main::SLC::"/Information/west/zlc/slc/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZME::"/Information/west/zme/zme.htm"';
+            inputArray[arrayIndex++] = '4::main::BNA::"/Information/west/zme/bna/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::MEM::"/Information/west/zme/mem/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZMP::"/Information/west/zmp/zmp.htm"';
+            inputArray[arrayIndex++] = '4::main::MSP::"/Information/west/zmp/msp/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::OMA::"/Information/west/zmp/oma/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZOA::"/Information/west/zoa/zoa.htm"';
+            inputArray[arrayIndex++] = '4::main::OAK::"/Information/west/zoa/oak/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SFO::"/Information/west/zoa/sfo/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SJC::"/Information/west/zoa/sjc/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SMF::"/Information/west/zoa/smf/frames.htm"';
+            inputArray[arrayIndex++] = '3::main::ZSE::"/Information/west/zse/zse.htm"';
+            inputArray[arrayIndex++] = '4::main::PDX::"/Information/west/zse/pdx/frames.htm"';
+            inputArray[arrayIndex++] = '4::main::SEA::"/Information/west/zse/sea/frames.htm"';
+            inputArray[arrayIndex++] = '2::    ::Airport Layout::"http://www.naco.faa.gov/index.asp?xml=naco/online/d_tpp"';
+            // NSST
+            inputArray[arrayIndex++] = '2::main::Severe WX::""';
+            inputArray[arrayIndex++] = '3::main::Current Reroutes::"/ratreader/jsp/index.jsp"';
+            inputArray[arrayIndex++] = '3::    ::Collaborative Forecast::"http://aviationweather.gov"';
+            inputArray[arrayIndex++] = '3::    ::Route Management Tool::"/rmt/coded_departure_routes.jsp"';
+            inputArray[arrayIndex++] = '2::main::OPS Plans::""';
+            inputArray[arrayIndex++] = '3::main::Current Operations Plan::"/adv/adv_spt.jsp"';
+            inputArray[arrayIndex++] = '3::main::Previous Operations Plan::"/adv/adv_spt_prev.jsp"';
+            inputArray[arrayIndex++] = '3::main::Telcon Worksheets::""';
+            inputArray[arrayIndex++] = '4::main::FAA::"/Operations/Strategic_Planning/faa_worksheets.html"';
+            inputArray[arrayIndex++] = '4::main::Customers::"/Operations/Strategic_Planning/user_worksheets.html"';
+            inputArray[arrayIndex++] = '3::main::Handbook::"/Operations/NSST/nsst_handbook.html"';
+            // end NSST
+            //New section for Playbook
+            inputArray[arrayIndex++] = '2::main::National Playbook::""';
+            inputArray[arrayIndex++] = '3::main::Current Version::""';
+            inputArray[arrayIndex++] = '4::    ::HTML Version::"/PLAYBOOK/pbindex.html"';
+            inputArray[arrayIndex++] = '4::main::PDF Version::"/Operations/playbook/current/current.pdf"';
+            inputArray[arrayIndex++] = '3::main::Cap/Tunnel Plans::""';
+            inputArray[arrayIndex++] = '4::main::ZAB::"/Operations/CapTunnel/zab_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZAU::"/Operations/CapTunnel/zau_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZBW::"/Operations/CapTunnel/zbw_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZDC::"/Operations/CapTunnel/zdc_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZDV::"/Operations/CapTunnel/zdv_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZFW::"/Operations/CapTunnel/zfw_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZHU::"/Operations/CapTunnel/zhu_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZID::"/Operations/CapTunnel/zid_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZJX::"/Operations/CapTunnel/zjx_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZKC::"/Operations/CapTunnel/zkc_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZLA::"/Operations/CapTunnel/zla_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZLC::"/Operations/CapTunnel/zlc_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZMA::"/Operations/CapTunnel/zma_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZME::"/Operations/CapTunnel/zme_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZMP::"/Operations/CapTunnel/zmp_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZNY::"/Operations/CapTunnel/zny_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZOA::"/Operations/CapTunnel/zoa_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZOB::"/Operations/CapTunnel/zob_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZSE::"/Operations/CapTunnel/zse_ct.htm""';
+            inputArray[arrayIndex++] = '4::main::ZTL::"/Operations/CapTunnel/ztl_ct.htm""';
+            //End new section of Playbook
+            inputArray[arrayIndex++] = '1::main::Tier Info::"tier/themap.htm"';
+            inputArray[arrayIndex++] = '1::main::Current Restrictions::"/current_restrictions/jsp/index.jsp"';
+            inputArray[arrayIndex++] = 'x';
+            // ** END AUTHOR-ADJUSTABLE SPECIFICATIONS **//
+            var db = new Array();
+            // inputArray[0] is an empty string. The data starts at inputArray[1].
+            // Expecting a string with lines of this form:
+            // TYPE::TITLE::"URL"
+            // where type is 0 (part), 1 (preface, index)), 2 (chapter-level),
+            //               3 (h1), 4 (h2)
+            // how to identify document types:
+            //   book with parts: if a book has parts, assume it has everything else.
+            //   book without parts: as soon as you see a type=2, it has chapters;
+            //        still look for a part, though
+            //   single file document: if you get to the end and never see a type=2,
+            //        then it is a single-file document
+            // Check to see if the book has parts or chapters.
+            // The answer determines the depth argument.
+            var hasParts = false;
+            var hasChapters = false;
+            var thisRecord;
+            var inPrefaceyThing = false;
+            var i;
+            // Find out if there are parts in this book.
+            for (i = 1; i < inputArray.length - 1; i++) {
+                thisRecord = inputArray[i];
+                hasParts = (thisRecord[0] == "0");
+                if (hasParts)
+                    break;
+                hasChapters = hasChapters || (thisRecord.charAt(0) == "2");
+            }
+            var PART, CHAPP, H1, H2;
+            // Assign level numbers, based on whether there are any parts.
+            if (hasParts) {
+                PART = 0;
+                CHAPP = 1;
+                H1 = 2;
+                H2 = 3;
+            } else if (hasChapters) {
+                CHAPP = 0;
+                H1 = 1;
+                H2 = 2;
+            } else {
+                CHAPP = 0;
+                H1 = 0;
+                H2 = 1;
+            }
+            //Loop again, fixing entries.
+            // TYPE::TITLE::"URL"
+            // becomes db[i] = new dbRecord(HASCHILD, "TITLE", "URL", DEPTH, "")
+            var thisType, nextType;
+            var thisRecord, nextRecord;
+            for (i = 1; i < inputArray.length - 2; i++) {
+                thisRecord = inputArray[i];
+                nextRecord = inputArray[i + 1];
+                thisType = thisRecord.charAt(0);
+                nextType = nextRecord.charAt(0);
+                if (nextType == "x") {
+                    hasChild = false;
+                } else {
+                    hasChild = (thisType < nextType);
+                }
+                if (thisType == "0") {
+                    depth = PART;
+                    inPrefaceyThing = false;
+                } else if (thisType == "1") {
+                    depth = 0;
+                    inPrefaceyThing = true;
+                } else if (thisType == "2") {
+                    depth = CHAPP;
+                    inPrefaceyThing = false;
+                } else if (thisType == "3") {
+                    inPrefaceyThing ? depth = 1 : depth = H1
+                } else {
+                    inPrefaceyThing ? depth = 2 : depth = H2
+                }
+                target = thisRecord.substring(3, 7);
+                title = thisRecord.substring(9, thisRecord.lastIndexOf('::'));
+                url = thisRecord.substring(thisRecord.lastIndexOf('::\"') + 3, thisRecord.length - 1);
+                db[i] = new dbRecord(hasChild,title,url,depth,"",target);
+            }
+            if (nextType != "x") {
+                target = nextRecord.substring(3, 7);
+                title = nextRecord.substring(9, nextRecord.lastIndexOf('::'));
+                url = nextRecord.substring(nextRecord.lastIndexOf('::\"') + 3, nextRecord.length - 1);
+                if (nextType == "0")
+                    depth = PART;
+                else if (nextType == "1")
+                    depth = 0;
+                else if (nextType == "2")
+                    depth = CHAPP;
+                else if (nextType == "3") {
+                    inPrefaceyThing ? depth = 1 : depth = H1
+                } else {
+                    inPrefaceyThing ? depth = 2 : depth = H2
+                }
+                db[i] = new dbRecord(false,title,url,depth,"",target);
+                //   db[i+1] = new dbRecord(false, "<FONT SIZE=-1>Copyright</FONT>", "copyrt.htm", 0, "");
+                // } else {
+                //   db[i] = new dbRecord(false, "<FONT SIZE=-1>Copyright</FONT>", "copyrt.htm", 0,
+                //  "");
+            }
+            // object constructor for each outline entry
+            function dbRecord(mother, display, URL, indent, statusMsg, tgt) {
+                this.mother = mother
+                // is this item a parent?
+                this.display = display
+                // text to display
+                this.URL = URL
+                // link tied to text; if empty string, item appears as straight text
+                this.indent = indent
+                // how many levels nested?
+                this.statusMsg = statusMsg
+                // descriptive text for status bar
+                this.tgt = tgt
+                // target frame
+                return this
+            }
+            // pre-load all images into cache
+            var fillerImg = new Image(1,1)
+            fillerImg.src = "/images/filler.gif"
+            var collapsedImg = new Image(widgetWidth,widgetHeight)
+            collapsedImg.src = collapsedWidget
+            var expandedImg = new Image(widgetWidth,widgetHeight)
+            expandedImg.src = expandedWidget
+            var endpointImg = new Image(widgetWidth,widgetHeight)
+            endpointImg.src = endpointWidget
+            // ** functions that get and set persistent cookie data **
+            // set cookie data
+            var mycookie = document.cookie
+            function setCurrState(setting) {
+                mycookie = document.cookie = "currState=" + escape(setting)
+            }
+            // retrieve cookie data
+            function getCurrState() {
+                var label = "currState="
+                var labelLen = label.length
+                var cLen = mycookie.length
+                var i = 0
+                while (i < cLen) {
+                    var j = i + labelLen
+                    if (mycookie.substring(i, j) == label) {
+                        var cEnd = mycookie.indexOf(";", j)
+                        if (cEnd == -1) {
+                            cEnd = mycookie.length
+                        }
+                        return unescape(mycookie.substring(j, cEnd))
+                    }
+                    i++
+                }
+                return ""
+            }
+            // **function that updates persistent storage of state**
+            // toggles an outline mother entry, storing new value in the cookie
+            function toggle(n) {
+                if (n != 0) {
+                    var newString = ""
+                    var currState = getCurrState()
+                    // of whole outline
+                    var expanded = currState.charAt(n - 1)
+                    // of clicked item
+                    newString += currState.substring(0, n - 1)
+                    newString += expanded ^ 1
+                    // Bitwise XOR clicked item
+                    newString += currState.substring(n, currState.length)
+                    setCurrState(newString)
+                    // write new state back to cookie
+                }
+            }
+            // **functions used in assembling updated outline**
+            // returns the proper GIF file name for each entry's control
+            function getGIF(n) {
+                var mom = db[n].mother
+                // is entry a parent?
+                var expanded = getCurrState().charAt(n - 1)
+                // of clicked item
+                if (!mom) {
+                    return endpointWidget
+                } else {
+                    if (expanded == 1) {
+                        return expandedWidget
+                    }
+                }
+                return collapsedWidget
+            }
+            // returns the proper status line text based on the icon style
+            function getGIFStatus(n) {
+                var mom = db[n].mother
+                // is entry a parent
+                var expanded = getCurrState().charAt(n - 1)
+                // of rolled item
+                if (!mom) {
+                    return "No further items"
+                } else {
+                    if (expanded == 1) {
+                        return "Click to collapse nested items"
+                    }
+                }
+                return "Click to expand nested items"
+            }
+            // initialize 'current state' storage field
+            if (getCurrState() == "" || getCurrState().length != (db.length - 1)) {
+                initState = ""
+                for (i = 1; i < db.length; i++) {
+                    initState += "0"
+                }
+                setCurrState(initState)
+            }
+            // end -->
+        </SCRIPT>
+    </HEAD>
+    <body>
+        <DIV align="center">
+            <A HREF="/index.html" target=_top>
+                <IMG id="ATCSCC_Logo" HEIGHT=148 WIDTH=148 SRC="/images/smallatcscclogo.gif" BORDER=0 ALT="Go to the ATCSCC Home Page">
+            </A>
+        </DIV>
+        <H3>
+            <CENTER>
+                <FONT COLOR="BLACK">
+                    ATCSCC<BR>
+                    OIS<BR>SYSTEM
+                </FONT>
+            </CENTER>
+        </H3>
+        <center>
+            <script language="javascript" align="center">
+                <!-- Begin hiding script from older browsers
+                home_date();
+                document.write("<BR>");
+                // end hiding script from old browsers -->
+            </script>
+        </center>
+        <BR>
+        <SCRIPT LANGUAGE="JavaScript1.1">
+            <!-- start
+            // build new outline based on the values of the cookie
+            // and data points in the outline data array.
+            // This fires each time the user clicks on a control,
+            // because the HREF for each one reloads the current document.
+            var newOutline = ""
+            var prevIndentDisplayed = 0
+            var showMyDaughter = 0
+            // DOCUMENT NAME IS HERE (DEVEDGE INFO WAS PREVIOUSLY HERE ALSO BUT WAS MOVED TO LATER IN FILE)
+            document.write("<NOBR><FONT SIZE=-1><B>" + documentName + "</FONT></B></NOBR><BR>")
+            // DOCUMENT NAME ENDS HERE
+            // cycle through each entry in the outline array
+            for (var i = 1; i < db.length; i++) {
+                var theGIF = getGIF(i)
+                // get the image
+                var theGIFStatus = getGIFStatus(i)
+                // get the status message
+                var currIndent = db[i].indent
+                // get the indent level
+                var expanded = getCurrState().charAt(i - 1)
+                // current state
+                // display entry only if it meets one of three criteria
+                if (currIndent == 0 || currIndent <= prevIndentDisplayed || (showMyDaughter == 1 && (currIndent - prevIndentDisplayed == 1))) {
+                    newOutline += "<NOBR><IMG SRC=\"/images/filler.gif\" HEIGHT = 1 WIDTH =" + (indentPixels * currIndent) + ">"
+                    newOutline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.status=\'" + theGIFStatus + "\';return true;\" onClick=\"toggle(" + i + ");return " + (theGIF != endpointWidget) + "\">"
+                    newOutline += "<IMG SRC=\"" + theGIF + "\" HEIGHT=" + widgetHeight + " WIDTH=" + widgetWidth + " BORDER=0></A>"
+                    if (db[i].URL == "" || db[i].URL == null) {
+                        newOutline += " " + db[i].display + "</NOBR><BR>"
+                        // no link, just a listed item
+                    } else {
+                        newOutline += " <A HREF=\"" + db[i].URL + "\" TARGET=\"" + db[i].tgt + "\" onMouseOver=\"window.status=\'" + db[i].statusMsg + "\';return true;\">" + db[i].display + "</A></NOBR><BR>"
+                    }
+                    prevIndentDisplayed = currIndent
+                    showMyDaughter = expanded
+                    if (db.length > 25) {
+                        document.write(newOutline)
+                        newOutline = ""
+                    }
+                }
+            }
+            document.write(newOutline)
+            document.write("<HR>")
+            // document.write("<NOBR><FONT SIZE=-1>If cookies are disabled,</FONT></NOBR><BR>")
+            // document.write("<NOBR><FONT SIZE=-1>this outline cannot expand.</FONT></NOBR><BR>")
+            // document.write("<NOBR><FONT SIZE=-1>This frame is resizable.</FONT></NOBR><P>")
+            // end -->
+        </SCRIPT>
+    </body>
+</html>

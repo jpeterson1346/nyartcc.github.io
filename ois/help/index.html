@@ -1,0 +1,1370 @@
+<HTML>
+    <HEAD>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+        <TITLE>National Airspace System Status | Help</TITLE>
+        <LINK rel=stylesheet type="text/css" href="/styles/ois_display.css">
+    </HEAD>
+    <BODY LINK="Blue" VLINK="Purple" bgcolor="White">
+        <a name="groundDelay">&nbsp;</a>
+        <P ALIGN="CENTER">
+            <B>
+                <FONT FACE="Arial" SIZE=3>National Programs</FONT>
+            </B>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <b>Overview</b>
+            </font>
+        </P>
+        <P>
+            <font face="Arial" size="2">National Programs are comprised of Ground Delay Programs (GDP), Airspace Flow Programs (AFP) and Collaborative Trajectory Options Programs (CTOP).</font>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <b>Ground Delay Programs</b>
+            </font>
+        </P>
+        <P>
+            <font face="Arial" size="2">A GDP is implemented to control air traffic volume to airports where the projected traffic demand is expected to exceed the airport's acceptance rate for a lengthy period of time. Lengthy periods of demand exceeding acceptance rate are normally a result of the airport's acceptance rate being reduced for some reason. The most common reason for a reduction in acceptance rate is adverse weather such as low ceilings and visibility.</font>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <b>Airspace Flow Programs</b>
+            </font>
+        </P>
+        <P>
+            <font face="Arial" size="2">An AFP is a traffic management process that identifies constraints in the en route system, develops a real time list of flights that are filed into the constrained area, and distributes expect departure clearance times (EDCT) to meter the demand through the area. If an AFP is issued and a flight is included, the pilot will receive an EDCT. Meeting the departure time is important because it allows traffic managers to properly meter flights through the constrained area being controlled by the AFP.</font>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <b>Collaborative Trajectory Options Programs</b>
+            </font>
+        </P>
+        <P>
+            <font face="Arial" size="2">A CTOP is a method of managing demand through constrained airspace identified by one or more Flow Constrained Areas (FCA). Through automation, flights will be assigned either a route assignment that avoids the CTOP, or a combination of assigned route through the CTOP and controlled departure time. Flight operators may communicate preferences, with regard to both route and delay through automation. The principal goal for the initial deployment will be to provide enhanced enroute traffic management during severe weather events.</font>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <B>How It Works</B>
+            </font>
+        </P>
+        <P>
+            <font face="Arial" size="2">Flights that are destined to the affected airport are issued Controlled Departure Times (CDT) at their point of departure. Flights that have been issued CDTs are not permitted to depart until their Controlled Departure Time. These CDTs are calculated in such a way as to meter the rate that traffic arrives at the affected airport; ensuring that demand is equal to acceptance rate. The length of delays that result from the implementation of a Ground Delay Program is a factor of two things; how much greater than the acceptance rate the original demand was, and for what length of time the original demand was expected to exceed the acceptance rate.</font>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <B>Legend</B>
+            </font>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <b>PROGRAM NAME:</b>
+                Airport for which the Ground Delay Program has been issued or the FCA relating to the AFP or the CTOP Short Name.
+            </font>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <b>START:</b>
+                The time, in Universal Coordinated Time (UTC) that the GDP or AFP or CTOP will start.
+            </font>
+        </P>
+        <P>
+            <font face="Arial" size="2">
+                <b>END:</b>
+                The time, in UTC, that the GDP or AFP or CTOP will end.
+            </font>
+        </P>
+        <P>
+            <I>
+                <font face="Arial" size="2">Traffic that was originally scheduled to arrive at the affected airport between the program's Start and End time will be issued delay times.</font>
+        </P>
+</I>
+<P>
+    <font face="Arial" size="2">
+        <b>SCOPE:</b>
+        Indicates which traffic is included in the program. Traffic departing from airports under the jurisdiction of the listed facilities will be issued delay times. See <a href="/ois/tier/themap.htm">Tier Info</a>
+        for an explanation and graphical representation of jurisdictions.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>REASON:</b>
+        The reason that the GDP/AFP/CTOP had to be implemented. Common acronyms used in this field are: 
+    </font>
+</P>
+<br>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=174>
+    <TR>
+        <td WIDTH="52%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>RWY or RY</b>
+                </FONT>
+        </td>
+        <TD WIDTH="48%" VALIGN="TOP">
+            <P>
+                <FONT FACE="Arial" SIZE=2>Runway</FONT>
+            </p>
+        </TD>
+    </TR>
+    <TR>
+        <TD WIDTH="52%" VALIGN="TOP" HEIGHT=13>
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>WX</b>
+                </FONT>
+            </p>
+        </TD>
+        <TD WIDTH="48%" VALIGN="TOP" HEIGHT=13>
+            <P>
+                <FONT FACE="Arial" SIZE=2>Weather</FONT>
+            </p>
+        </TD>
+    </TR>
+    <TR>
+        <TD WIDTH="52%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>CIGS</b>
+                </FONT>
+            </p>
+        </TD>
+        <TD WIDTH="48%" VALIGN="TOP">
+            <P>
+                <FONT FACE="Arial" SIZE=2>Ceilings </FONT>
+            </p>
+        </TD>
+    </TR>
+    <TR>
+        <TD WIDTH="52%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>VIS or VSBY</b>
+                </FONT>
+            </p>
+        </TD>
+        <TD WIDTH="48%" VALIGN="TOP">
+            <P>
+                <FONT FACE="Arial" SIZE=2>Visibility</FONT>
+            </p>
+        </TD>
+    </TR>
+</TABLE>
+<P>
+    <FONT FACE="Arial" size="2">
+        <b>AVG:</b>
+        The average delay, in minutes, that has been issued to affected flights.
+    </font>
+</P>
+<P>
+    <FONT FACE="Arial" size="2">
+        <b>AAR:</b>
+        The Airport Acceptance Rate. The number of arrivals that an airport is capable of accepting each hour.
+    </font>
+</P>
+<P>
+    <FONT FACE="Arial" size="2">
+        <b>PR:</b>
+        The Acceptance Rate that the ATCSCC Program Specialist determines is necessary to minimize the delay. 
+    </font>
+</P>
+<P>
+    <FONT FACE="Arial" size="2">
+        <b>ADVZY:</b>
+        The advisory number of the advisory that was issued by the ATCSCC announcing this GDP/AFP/CTOP.
+    </font>
+</P>
+<P>
+    <FONT FACE="Arial" size="2">
+        <b>DA:</b>
+        A link to the Delay Assignment associated with this GDP/AFP/CTOP. By clicking the DA link, a pop up window will display the current delay minutes by each quarter hour for this GDP/AFP/CTOP.
+
+
+</P>
+</FONT>
+<P>
+    <font face="Arial" size="2">
+        <b>Example:</b>
+    </font>
+</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=526>
+    <TR>
+        <th class=caption WIDTH="9%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>PROGRAM NAME</b>
+                </FONT>
+        </th>
+        <th class=caption WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>START</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>END</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="32%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>SCOPE</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="19%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>REASON</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>AVG</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>AAR</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>PR</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="10%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>ADVZY</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" size="2">
+                    <b>DA</b>
+                </FONT>
+            </p>
+        </th>
+    </TR>
+    <TR>
+        <TD WIDTH="9%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">BOS</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">1800</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">2200</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="32%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">ALL</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="19%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">LOW CIGS/VIS</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">41</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">40</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">40</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="10%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" color="#0000ff">
+                    <u>13</u>
+                </FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" color="#0000ff">
+                    <u>DA</u>
+                </FONT>
+            </p>
+        </TD>
+    </TR>
+    <TR>
+        <TD WIDTH="9%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" color="#0000ff">
+                    <u>FCA001</u>
+                </FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">1445</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">1615</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="32%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">See Control Element...</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="19%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">EQUIPMENT</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">62</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">--</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">75</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="10%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" color="#0000ff">
+                    <u>28</u>
+                </FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" color="#0000ff">
+                    <u>DA</u>
+                </FONT>
+            </p>
+        </TD>
+    </TR>
+    <TR>
+        <TD WIDTH="9%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" color="#0000ff">
+                    <u>CTP011</u>
+                </FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">1900</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">0059</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="32%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">ALL</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="19%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">EQUIPMENT/OUTAGE</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">140</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">--</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial">30</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="10%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" color="#0000ff">
+                    <u>21</u>
+                </FONT>
+            </p>
+        </TD>
+        <TD WIDTH="5%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" color="#0000ff">
+                    <u>DA</u>
+                </FONT>
+            </p>
+        </TD>
+    </TR>
+</TABLE>
+<P>
+    <FONT FACE="Arial" size="2">In the above example, the first record is a GDP. Flights departing from all airports with a destination of Boston, that were originally scheduled to arrive at Boston between 1800 and 2200, will be issued delays. The average delay will be 41 minutes. The Ground Delay Program was issued because low ceilings and visibility have reduced Boston's acceptance rate (AAR) to 40.
+</P>
+</FONT>
+<P>
+    <FONT FACE="Arial" size="2">
+        The second record is an AFP. By clicking the FCA001 link, the user will be shown an "AFP details" page containing  the following details:
+
+
+
+        <UL>
+            <LI>
+                <font face="Arial" size="2">A table showing the following parameters:</FONT>
+            </LI>
+            <UL>
+                <LI>
+                    <font face="Arial" size="2">FCA Name</FONT>
+                </LI>
+                <LI>
+                    <font face="Arial" size="2">Scope</FONT>
+                </LI>
+                <LI>
+                    <font face="Arial" size="2">AFP Start/End</FONT>
+                </LI>
+                <LI>
+                    <font face="Arial" size="2">FCA Start/End</FONT>
+                </LI>
+                <LI>
+                    <font face="Arial" size="2">Alt.Floor/Ceiling</FONT>
+                </LI>
+                <LI>
+                    <font face="Arial" size="2">Filter Summary</FONT>
+                </LI>
+            </UL>
+            <LI>
+                <font face="Arial" size="2">Graphical display of FCA</FONT>
+            </LI>
+        </UL>
+</P>
+</FONT>
+<P>
+    <FONT FACE="Arial" size="2">
+        The third record is a CTOP. By clicking the CTP011 link, the user will be shown a "CTOP details" page containing  the following details:
+
+
+
+        <ul>
+            <li><font face="Arial" size="2">A table showing the following parameters for each FCA comprising the CTOP:</FONT></li>
+            <ul>
+                <LI><font face="Arial" size="2">FCA Name</FONT></LI>
+                <LI><font face="Arial" size="2">Scope</FONT></LI>
+                <LI><font face="Arial" size="2">CTOP Start/End</FONT></LI>
+                <LI><font face="Arial" size="2">FCA Start/End</FONT></LI>
+                <LI><font face="Arial" size="2">Alt.Floor/Ceiling</FONT></LI>
+                <LI><font face="Arial" size="2">Filter Summary</FONT></LI>
+            </ul>
+            <LI><font face="Arial" size="2">Graphical display of FCA</FONT></LI>
+        </ul>
+</FONT><hr align="LEFT" size="1" width="100%">
+<a name="groundStop">&nbsp;</A>
+<P ALIGN="CENTER">
+    <FONT FACE="Arial" SIZE=3>
+        <B>Ground Stop</B>
+    </FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Overview</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">Ground Stops are implemented for a number of reasons. The most common reasons are:</FONT>
+</P>
+<UL>
+    <LI>
+        <font face="Arial" size="2">To control air traffic volume to airports when the projected traffic demand is expected to exceed the airport's acceptance rate for a short period of time.</FONT>
+    </LI>
+    <LI>
+        <font face="Arial" size="2">To temporarily stop traffic to allow time for the implementation of a longer-term solution, such as a Ground Delay Program. </FONT>
+    </LI>
+    <LI>
+        <font face="Arial" size="2">The affected airport's acceptance rate has been reduced to zero.</FONT>
+    </LI>
+</UL>
+<P>
+    <font face="Arial" size="2">
+        <B>How It Works</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">Flights that are destined to the affected airport are held at their departure point for the duration of the Ground Stop.</FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>Legend</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>ARPT:</b>
+        Airport for which the Ground Stop has been issued.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>UPDATE:</b>
+        The time, in Universal Coordinated Time (UTC), that the Ground Stop is expected to end.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>POE:</b>
+        Probability Of Extension.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>SCOPE:</b>
+        Indicates which traffic is included in the Ground Stop. Traffic departing from airports under the jurisdiction of the listed facilities will be stopped. See <a href="/ois/tier/themap.htm">Tier Info</a>
+        for an explanation and graphical representation of jurisdictions.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>REASON:</b>
+        The reason that the Ground Stop had to be implemented.
+    </font>
+</P>
+<P>
+    <FONT FACE="Arial" size="2">
+        <b>ADVZY:</b>
+        The advisory issued by the ATCSCC corresponding to this Ground Stop.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Example</b>
+    </font>
+</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=583>
+    <TR>
+        <th class=caption WIDTH="11%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>ARPT</b>
+                </FONT>
+<th class=caption WIDTH="11%" VALIGN="TOP">
+    <P ALIGN="CENTER">
+        <FONT FACE="Arial" SIZE=2>
+            <b>UPDATE</b>
+        </FONT>
+    </p>
+<th class=caption WIDTH="11%" VALIGN="TOP">
+    <P ALIGN="CENTER">
+        <FONT FACE="Arial" SIZE=2>
+            <b>POE</b>
+        </FONT>
+    </p>
+<th class=caption WIDTH="33%" VALIGN="TOP">
+    <P ALIGN="CENTER">
+        <FONT FACE="Arial" SIZE=2>
+            <b>SCOPE</b>
+        </FONT>
+    </p>
+<th class=caption WIDTH="23%" VALIGN="TOP">
+    <P ALIGN="CENTER">
+        <FONT FACE="Arial" SIZE=2>
+            <b>REASON</b>
+        </FONT>
+    </p>
+<th class=caption WIDTH="11%" VALIGN="TOP">
+    <P ALIGN="CENTER">
+        <FONT FACE="Arial" SIZE=2>
+            <b>ADVZY</b>
+        </FONT>
+    </p>
+</TR>
+<TR>
+    <TD WIDTH="11%" VALIGN="TOP">
+        <P ALIGN="CENTER">
+            <FONT FACE="Arial" SIZE=2>ORD</FONT>
+        </p>
+    </TD>
+    <TD WIDTH="11%" VALIGN="TOP">
+        <P ALIGN="CENTER">
+            <FONT FACE="Arial" SIZE=2>1700</FONT>
+        </p>
+    </TD>
+    <TD WIDTH="11%" VALIGN="TOP">
+        <P ALIGN="CENTER">
+            <FONT FACE="Arial" SIZE=2>LOW</FONT>
+        </p>
+    </TD>
+    <TD WIDTH="33%" VALIGN="TOP">
+        <P ALIGN="CENTER">
+            <FONT FACE="Arial" SIZE=2>ZAU1</FONT>
+        </p>
+    </TD>
+    <TD WIDTH="23%" VALIGN="TOP">
+        <P ALIGN="CENTER">
+            <FONT FACE="Arial" SIZE=2>SNOW REMOVAL</FONT>
+        </p>
+    </TD>
+    <TD WIDTH="11%" VALIGN="TOP">
+        <P ALIGN="CENTER">
+            <FONT FACE="Arial" SIZE=2>12</FONT>
+        </p>
+    </TD>
+</TR>
+</TABLE>
+<P>
+    <FONT FACE="Arial" size="2">In this example, flights departing from airports that are under the jurisdiction of Chicago ARTCC and Chicago's first tier ARTCCs, with a destination of Chicago, have been stopped. The Ground Stop is expected to end at 1700, and was implemented because snow is being removed from Chicago's runways.</FONT>
+</p>
+<hr align="LEFT" size="1" width="100%">
+<a name="Deicing">&nbsp;</A>
+<P ALIGN="CENTER">
+    <FONT FACE="Arial" SIZE=3>
+        <B>Deicing</B>
+    </FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Overview</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">This table indicates airports where aircraft ground deicing is currently occurring.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>How It Works</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">When necessary, prior to departure, aircraft are sprayed with a deicing fluid to remove snow and ice. The ATCSCC monitors airports that have implemented deicing, to ensure that once an aircraft is deiced, it is not subject to traffic management initiatives that might delay it's departure.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>Legend</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>ARPT:</b>
+        Airport.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>TIME:</b>
+        The time, in Universal Coordinated Time (UTC), that the airport started deicing aircraft. The format is HHMM - the characters indicate the time.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Example</b>
+    </font>
+</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=269>
+    <TR>
+        <th class=caption WIDTH="50%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>ARPT</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="50%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>TIME</b>
+                </FONT>
+            </p>
+        </th>
+    </TR>
+    <TR>
+        <TD WIDTH="30%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>DEN</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="35%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>0124</FONT>
+            </p>
+        </TD>
+    </TR>
+</TABLE>
+<P>
+    <FONT FACE="Arial" size="2">In this example, aircraft at Denver are being deiced. The deicing started at 0124.</FONT>
+</P>
+<hr align="LEFT" size="1" width="100%">
+<a name="Closures">&nbsp;</A>
+<P ALIGN="CENTER">
+    <FONT FACE="Arial" SIZE=3>
+        <B>Airport Closures</B>
+    </FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Overview</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">This table shows airports that are closed.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>How It Works</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">Occasionally, airports are closed by the local airport authority. The most common reason for an airport closure is snow; the snowplows are unable to keep the runways adequately plowed.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>Legend</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>AIRPORT:</b>
+        The airport that is closed.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>TIME:</b>
+        The time, in Universal Coordinated Time (UTC), that the airport was closed. The format is MMDDHHmm. MM = Month. DD = Day of the month. HH = Hour of the day. mm = Minute of the hour.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>REASON:</b>
+        The reason that the airport has been closed.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>REOPEN:</b>
+        The time, in Universal Coordinated Time (UTC), that the airport is expected to reopen. The format is MMDDHHmm. MM = Month. DD = Day of the month. HH = Hour of the day. mm = Minute of the hour.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Example</b>
+    </font>
+</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=583>
+    <TR>
+        <th class=caption VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>ARPT</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>TIME</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>REASON</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>REOPEN</b>
+                </FONT>
+            </p>
+        </th>
+    </TR>
+    <TR>
+        <TD VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>JFK</FONT>
+            </p>
+        </TD>
+        <TD VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>01101350</FONT>
+            </p>
+        </TD>
+        <TD VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>SNOW</FONT>
+            </p>
+        </TD>
+        <TD VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>UNKNOWN</FONT>
+            </p>
+        </TD>
+    </TR>
+    <TR>
+        <TD VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>EWR</FONT>
+            </p>
+        </TD>
+        <TD VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>01101200</FONT>
+            </p>
+        </TD>
+        <TD VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>SNOW</FONT>
+            </p>
+        </TD>
+        <TD VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>01102200</FONT>
+            </p>
+        </TD>
+    </TR>
+</TABLE>
+<P>
+    <font face="Arial" size="2">In the first example, John F. Kennedy international airport
+
+was closed on January 10th at 1350 UTC because of snow. It is currently not known what time
+
+John F. Kennedy international airport is expected to reopen.</FONT>
+</P>
+<P>
+    <font face="Arial" size="2">In the second example, Newark international airport was closed
+
+on January 10th at 1200 UTC because of snow. Newark is expected to reopen on January 10th at 2200 UTC.</FONT>
+</P>
+<hr align="LEFT" size="1" width="100%">
+<a name="Delay">&nbsp;</A>
+<P ALIGN="CENTER">
+    <FONT FACE="Arial" SIZE=3>
+        <B>Delay Information</B>
+    </FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Overview</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">This table shows airports that are currently experiencing delays.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>How It Works</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">Terminal facilities are required to report delays of 15 minutes or more to the Air Traffic Control System Command Center (ATCSCC). Delays are tracked in 15 minute increments. Delay times are preceded with either a '+' or a '-' to indicate that the delays are increasing or decreasing. Because the delays are tracked in 15 minute increments, a single delay entry actually represents a time range. For example, an entry of +15 indicates that delays are greater than 15 minutes but less than 30 minutes and are increasing. An entry of -30 indicates that delays are less than 30 minutes but greater than 15 minutes and are decreasing. Normally delays of less than 15 minutes are not shown. The one exception to this is when delays for an airport have just gone below 15 minutes. This will be indicated by an entry of -15.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>Legend</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>ARPT:</b>
+        Airport.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>AD:</b>
+        Arrival Delays. Arrival traffic is experiencing delays. This usually indicates that arrival traffic is doing airborne holding.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>DD:</b>
+        Departure delays. Departure traffic is experiencing delays. Depending on the length of delay, traffic will be experiencing longer than normal taxi times or holding at the gate.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>TIME:</b>
+        The time, in Universal Coordinated Time (UTC), that the delay information, for the specified airport, was last updated.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>REASON:</b>
+        The reason for the delays.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Example</b>
+    </font>
+</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=583>
+    <TR>
+        <th class=caption WIDTH="9%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>ARPT</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="15%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>AD</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="16%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>DD</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="15%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>TIME</b>
+                </FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="43%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>
+                    <b>REASON</b>
+                </FONT>
+            </p>
+        </th>
+    </TR>
+    <TR>
+        <TD WIDTH="9%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>ORD</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="15%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>0</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="16%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>-45</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="15%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>1545</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="43%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>TSTMS</FONT>
+            </p>
+        </TD>
+    </TR>
+    <TR>
+        <TD WIDTH="9%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>EWR</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="15%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>+15</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="16%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>0</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="15%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>1535</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="43%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>FOG</FONT>
+            </p>
+        </TD>
+    </TR>
+</TABLE>
+<P>
+    <font face="Arial" size="2">In the first example, Chicago is experiencing departure delays. Delays are currently less than 45 minutes but greater than 30 minutes and are decreasing. The last delay report was received at 1545. Thunderstorms are the cause of the delays.</FONT>
+</P>
+<P>
+    <font face="Arial" size="2">In the second example, Newark is experiencing arrival delays. Delays are currently greater than 15 minutes but less than 30 minutes and are increasing. The last delay report was received at 1535. Fog is the cause of the delays.</FONT>
+</P>
+<hr align="CENTER" size="1" width="100%">
+<a name="Runway">&nbsp;</A>
+<P ALIGN="CENTER">
+    <FONT FACE="Arial" SIZE=3>
+        <B>Runway/Equipment Information</B>
+    </FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Overview</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">This table is used to track equipment outages and construction that may result in air traffic delays.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>Legend</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>FACILITY:</b>
+        The airport or equipment that is experiencing problems.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>DESCRIPTION:</b>
+        A brief description of the problem.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Example</b>
+    </font>
+</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=414>
+    <TR>
+        <th class=caption WIDTH="19%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>FACILITY</FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="81%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>DESCRIPTION</FONT>
+            </p>
+        </th>
+    </TR>
+    <TR>
+        <TD WIDTH="19%" VALIGN="TOP" HEIGHT=36>
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>LGA</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="81%" VALIGN="TOP" HEIGHT=36>
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>LGA ARPT CLOSED DAILY TO FIXED WING A/C FROM 11/30 THRU 12/31 0400-1000Z. FOR MAINT.</FONT>
+            </p>
+        </TD>
+    </TR>
+</TABLE>
+<hr align="CENTER" size="1" width="100%">
+<a name="FlightCheck">&nbsp;</A>
+<P ALIGN="CENTER">
+    <FONT FACE="Arial" SIZE=3>
+        <B>Flight Check Information</B>
+    </FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Overview</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">This table shows airports that are scheduled for a flight check.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>How It Works</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">Periodic inspections are made of navigational aids in the National Airspace System (NAS). Some of these inspections are done by specially instrumented aircraft. In order for the flight check instruments to make accurate measurements, certain phases of the flight check must not be interrupted. Because of this, flight inspections can cause minor air traffic delays.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>Legend</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>AIRPORT:</b>
+        The airport that will be flight checked.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>ZULU DATE/TIME:</b>
+        The date and time, in Universal Coordinated Time (UTC), that the airport is scheduled to receive a flight check.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>LOCAL TIME:</b>
+        The time, in local time, that the airport is scheduled to receive a flight check.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>DESCRIPTION:</b>
+        A brief description of what will be checked.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Example</b>
+    </font>
+</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=582>
+    <TR>
+        <th class=caption WIDTH="12%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>AIRPORT</FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="23%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>ZULU DATE/TIME</FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="18%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>LOCAL TIME</FONT>
+            </p>
+        </th>
+        <th class=caption WIDTH="47%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>DESCRIPTION</FONT>
+            </p>
+        </th>
+    </TR>
+    <TR>
+        <TD WIDTH="12%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>SEA</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="23%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>11/22/1999 2100Z</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="18%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>1300L</FONT>
+            </p>
+        </TD>
+        <TD WIDTH="47%" VALIGN="TOP">
+            <P ALIGN="CENTER">
+                <FONT FACE="Arial" SIZE=2>RWY 34R APL/A (SEA) SPECIAL</FONT>
+            </p>
+        </TD>
+    </TR>
+</TABLE>
+<P>
+    <font face="Arial" size="2">
+        In this example, Seattle is scheduled for a flight check on the 22<SUP>nd</SUP>
+        of November at 2100 UTC, 1300 local time. The flight check aircraft will be checking the Approach Lighting System for Runway 34 Right.
+    </FONT>
+</P>
+**
+
+<hr align="CENTER" size="1" width="100%">
+<a name="GPS">&nbsp;</A>
+<P ALIGN="CENTER">
+    <FONT FACE="Arial" SIZE=3>
+        <B>Reported GPS Anomalies</B>
+    </FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Overview</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">This table shows reported GPS anomalies, the date and time,  aircraft affected, and locations of these anomalies.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>Legend</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Location (City, ST):</b>
+        The general geographic area affected.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Date and Time:</b>
+        The date and time, in Universal Coordinated Time (UTC), that the anomalies are expected to occur.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Lat/Lon, Altitude and Affected Airspace:</b>
+        The exact Latitude/ Longitude that is affected.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Aircraft Type:</b>
+        A brief description of the type of aircraft that are affected.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Confirmed:</b>
+        In this case, &quot;Confirmed &quot;refers to an action taken by the FAA to validate the presence of a GPS anomaly.&nbsp;&nbsp;Validation is accomplished by one or more of the following actions:
+
+
+        <ol>
+            <li>Airborne flight evaluation
+
+        
+            <li>Identification of interference source
+
+        
+            <li>Reports from more than one aircraft utilizing an FAA certified GPS receiver (TSO C-129).
+
+
+        </ol>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Example</b>
+    </font>
+</P>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr>
+        <th colspan="5" class=caption>
+            <table border="0" width="100%">
+                <tr>
+                    <th class=caption>REPORTED GPS ANOMALIES</th>
+                    <th class=caption width="5%" align="right">&nbsp;</th>
+                </tr>
+            </table>
+        </th>
+    </tr>
+    <tr>
+        <Th>Location (City, ST)</Th>
+        <Th>Date and Time</Th>
+        <Th>Lat/Lon, Altitude and Affected Airspace</Th>
+        <Th>Aircraft Type</th>
+        <Th>
+            Confirmed<sup>*</sup>
+        </th>
+    </tr>
+    <tr>
+        <td>FT. HUACHUCA, AZ</td>
+        <td>FEBRUARY  29, 2004 2013Z</td>
+        <td>01/12,13,14,19,20,
+        21,26,27,AND 28 </td>
+        <td>Cessna 172</td>
+        <td>YES</td>
+    </tr>
+</TABLE>
+<hr align="CENTER" size="1" width="100%">
+<a name="DoD">&nbsp;</A>
+<P ALIGN="CENTER">
+    <FONT FACE="Arial" SIZE=3>
+        <B>Scheduled DoD Testing</B>
+    </FONT>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Overview</b>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">This table shows scheduled DoD testing of known GPS anomalies, the date and time, locations of these anomalies, and a detailed information section.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <B>Legend</B>
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Geographic Area:</b>
+        The general geographic area affected.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Date and Time:</b>
+        The date and time, in Universal Coordinated Time (UTC), that the anomalies are expected to occur.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Affected Area and Details:</b>
+        The exact Latitude/ Longitude that is affected.
+    </font>
+</P>
+<P>
+    <font face="Arial" size="2">This information is for planning purposes only. An official U.S. NOTAM will be issued within 72 hours of the actual test starting time if it is not canceled.</font>
+</P>
+<P>
+    <font face="Arial" size="2">
+        <b>Example</b>
+    </font>
+</P>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr>
+        <th align="center" colspan="3" class=caption>
+            Scheduled DoD Testing<sup>*</sup>
+        </th>
+    </tr>
+    <tr>
+        <th width="25%">Geographic Area</th>
+        <th width="30%">Dates and Times</th>
+        <th width="45%">Affected Area and Details</th>
+    </tr>
+    <tr>
+        <td>FT. HUACHUCA, AZ</td>
+        <td>01/12,13,14,19,20,<BR>21,26,27,AND 28</td>
+        <td>
+            <form name="details_form0">
+                <textarea name="details0" onFocus="document.forms[0].details0.blur()" rows="8" cols="40" wrap="physical">GPS NAVIGATIONAL SIGNAL UNRELIABLE WITHIN A 190NM RADIUS OF FHU VOR 3140N/10912W (DUG 047 @ 024) AT FL400, 110NM RADIUS AT 10000 FT, AND A 70NM RADIUS AT THE SURFACE. IFR OPERATIONS BASED UPON GPS NAVIGATION SHOULD NOT BE PLANNED IN THE AFFECTED AREA DURING THE PERIOD INDICATED.THESE OPERATIONS INCLUDE DOMESTIC RNAV OR LONG-RANGE NAVIGATION REQUIRING GPS. THESE OPERATIONS ALSO INCLUDE STANDALONE AND OVERLAY INSTRUMENT APPROACH OPERATIONS. THE TIMES WILL BE 0600Z-1300Z, (2300-0600 MST).</textarea>
+            </form>
+        </td>
+    </tr>
+</TABLE>
+</BODY>
+</HTML>

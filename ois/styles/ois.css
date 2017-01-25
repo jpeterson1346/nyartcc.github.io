@@ -1,0 +1,95 @@
+body {
+    background-color: white;
+    font-family: verdana, tahoma, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    color: black ;
+    font-family : arial, sans-serif;
+}
+
+caption {
+    background-color : #99CCCC;
+    color : #000000;
+    margin-bottom: 0;
+    font-family: arial,sans-serif;
+    text-align : left
+}
+
+th {
+    color: #000099;
+    background-color : #CCCCCC;
+    font-family : arial, sans-serif;
+    font-weight: 500;
+}
+
+.caption {
+    text-align: center;
+    background-color: #99CCCC;
+    color: #000099;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.data {
+    color : black;
+    background-color : #FFFFCC;
+    text-align: center;
+}
+
+.white {
+    color : black;
+    background-color : white;
+}
+
+.note {
+    color: blue
+}
+
+.caution {
+    color: red
+}
+
+.one {
+    color: gray
+}
+
+.two {
+    color: red
+}
+
+ol {
+    font-family: verdana, tahoma, arial, sans-serif;
+}
+
+ul {
+    font-family: verdana, tahoma, arial, sans-serif;
+}
+
+ol.SecondOrder {
+    list-style-type: lower-alpha;
+}
+
+ol.ThirdOrder {
+    list-style-type: lower-roman;
+}
+
+ul.SecondOrder {
+    list-style-type: disc;
+}
+
+ul.ThirdOrder {
+    list-style-type: circle;
+}
+
+menu {
+    font-family: verdana, tahoma, arial, sans-serif;
+}
+
+.disclaimer {
+    font-weight: bold;
+    font-style: italic;
+    font-size: smaller;
+    color: red;
+    width: 650px;
+}
