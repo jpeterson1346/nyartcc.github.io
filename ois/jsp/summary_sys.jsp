@@ -10,8 +10,7 @@
     <body>
         <CENTER>
             <H2>NATIONAL AIRSPACE SYSTEM STATUS</H2>
-            <FONT face=Arial size=2>(Note: This page will refresh every 5 minutes.&nbsp;Last updated Wed, 25 Jan 2017 18:53:41 UTC.&nbsp;&nbsp;Provided by the FAA's Air Traffic Control System Command Center.)
-</FONT>
+            <FONT face=Arial size=2>(Note: This page will refresh every 5 minutes.&nbsp;Last updated Wed, 25 Jan 2017 18:53:41 UTC.&nbsp;&nbsp;Provided by the FAA's Air Traffic Control System Command Center.)</FONT>
             <BR>
             <!-- ----- Program Info ----- -->
             <table border="1" cellpadding="3" cellspacing="0" width="100%">
@@ -21,8 +20,8 @@
                             <tr>
                                 <th class=caption>NATIONAL PROGRAMS</th>
                                 <th class=caption width="5%" align="right">
-                                    <A HREF='javascript:HelpWindowGrndDelay()'>
-                                        <img SRC="/images/ois/help.gif" alt="help" BORDER=0 align=right>
+                                    <A href='javascript:HelpWindowGrndDelay()'>
+                                        <img src="/images/ois/help.gif" alt="help" border=0 align=right>
                                     </A>
                                 </th>
                             </tr>
@@ -51,8 +50,8 @@
                             <tr>
                                 <th class=caption>GROUND STOPS</th>
                                 <th class=caption width="5%" align="right">
-                                    <A HREF='javascript:HelpWindowGrndStop()'>
-                                        <img SRC="/images/ois/help.gif" alt="help" BORDER=0 align=right>
+                                    <A href='javascript:HelpWindowGrndStop()'>
+                                        <img src="/images/ois/help.gif" alt="help" border=0 align=right>
                                     </A>
                                 </th>
                             </tr>
@@ -80,8 +79,8 @@
                                         <tr>
                                             <th class=caption>DELAY INFO</th>
                                             <th class=caption width="5%" align="right">
-                                                <A HREF='javascript:HelpWindowDelay()'>
-                                                    <img SRC="/images/ois/help.gif" alt="help" BORDER=0 align=right>
+                                                <A href='javascript:HelpWindowDelay()'>
+                                                    <img src="/images/ois/help.gif" alt="help" border=0 align=right>
                                                 </A>
                                             </th>
                                         </tr>
@@ -106,8 +105,8 @@
                                         <tr>
                                             <th class=caption>AIRPORT CLOSURES</th>
                                             <th class=caption width="5%" align="right">
-                                                <A HREF='javascript:HelpWindowClosures()'>
-                                                    <img SRC="/images/ois/help.gif" alt="help" BORDER=0 align=right>
+                                                <A href='javascript:HelpWindowClosures()'>
+                                                    <img src="/images/ois/help.gif" alt="help" border=0 align=right>
                                                 </A>
                                             </th>
                                         </tr>
@@ -136,8 +135,8 @@
                                         <tr>
                                             <th class=caption>DEICING</th>
                                             <th class=caption width="5%" align="right">
-                                                <A HREF='javascript:HelpWindowDeicing()'>
-                                                    <img SRC="/images/ois/help.gif" alt="help" BORDER=0 align=right>
+                                                <A href='javascript:HelpWindowDeicing()'>
+                                                    <img src="/images/ois/help.gif" alt="help" border=0 align=right>
                                                 </A>
                                             </th>
                                         </tr>
@@ -167,8 +166,8 @@
                                         <tr>
                                             <th class=caption>Runway/Equipment Info</th>
                                             <th class=caption width="5%" align="right">
-                                                <A HREF='javascript:HelpWindowRunway()'>
-                                                    <img SRC="/images/ois/help.gif" alt="help" BORDER=0 align=right>
+                                                <A href='javascript:HelpWindowRunway()'>
+                                                    <img src="/images/ois/help.gif" alt="help" border=0 align=right>
                                                 </A>
                                             </th>
                                         </tr>

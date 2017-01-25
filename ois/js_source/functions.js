@@ -42,7 +42,6 @@ function Open_DA(nEventID) {
     var TD_URL = "oisTD.jsp?eventID=";
     TD_URL += nEventID;
     var tdWin = window.open(TD_URL, "DelayAssignment", "status=0,scrollbars=1,resizable=1,width=250,height=700");
-
     tdWin.focus();
 }
 
@@ -50,17 +49,12 @@ function Open_CDA(nEventID) {
     var TD_URL = "oisCTD.jsp?eventID=";
     TD_URL += nEventID;
     var tdWin = window.open(TD_URL, "DelayAssignment", "status=0,scrollbars=1,resizable=1,width=250,height=700");
-
     tdWin.focus();
 }
 
 function Open_PR(nEventID, arpt) {
     var PA_URL = "oisPR.jsp?";
     PA_URL += "eventID=" + nEventID + "&ctopName=" + arpt;
-
     var tdWin = window.open(PA_URL, "Program Rate", "status=0,scrollbars=1,resizable=1,width=380,height=800");
-
     tdWin.focus();
 }
-
-0

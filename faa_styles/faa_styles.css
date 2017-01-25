@@ -1,0 +1,723 @@
+body {
+    margin: 0px;
+/*    background-image: url(/images/bg.gif); */
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 0.84em;
+    color: #3D3D3D;
+}
+
+td {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 0.84em;
+    color: #3D3D3D;
+}
+
+H1 {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #3D3D3D;
+    font-weight: 800;
+    background-color : transparent;
+    margin-bottom : 17px;
+    margin-top : 0px;
+    line-height: 0.8em;
+}
+
+H2 {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #898989;
+    font-weight : 800;
+    background-color : transparent;
+    margin-bottom : 17px;
+    margin-top : 3px;
+    line-height: 0.5em;
+}
+
+.bodyText {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 0.84em;
+    color: #3D3D3D;
+}
+
+.bodyTextWhite {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 0.84em;
+    color: #FFFFFF;
+}
+
+.buttonstyle {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #1187E7;
+    color: #FFFFFF;
+    font-weight: bold;
+    border:1px solid;
+    border-top-color:#424142;
+    border-left-color:#424142;
+    border-right-color:#424142;
+    border-bottom-color:#424142;
+}
+
+.formlabel {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #3D3D3D;
+    font-weight: bold;
+}
+
+.formvalid {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    color: #990000;
+    font-weight: bold;
+}
+
+.subNavHead {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.utilitiesNavHead {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+a.mainNav {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #5D605C;
+    font-weight:bold;
+}
+
+a.mainNav:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #5D605C;
+    font-weight:bold;
+}
+
+a.mainNav:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #5D605C;
+    font-weight:bold;
+}
+
+a.mainNavOn {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #1187E7;
+    font-weight:bold;
+}
+
+a.mainNavOn:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #1187E7;
+    font-weight:bold;
+}
+
+a.mainNavOn:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #1187E7;
+    font-weight:bold;
+}
+
+a.subNavHeadLinkWhite {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+a.subNavHeadLinkWhite:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+a.subNavHeadLinkWhite:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+a.subNavHeadLinkBlack {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #292C29;
+    font-weight:bold;
+}
+
+a.subNavHeadLinkBlack:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #292C29;
+    font-weight:bold;
+}
+
+a.subNavHeadLinkBlack:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #292C29;
+    font-weight:bold;
+}
+
+a.generalNav {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+a.generalNav:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+a.generalNav:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+a.generalNavOn {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+a.generalNavOn:link {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+a.generalNavOn:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+a.visitorNav {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #2E2E2E;
+    font-weight:bold;
+}
+
+a.visitorNav:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #2E2E2E;
+    font-weight:bold;
+}
+
+a.visitorNav:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #2E2E2E;
+    font-weight:bold;
+}
+a.visitorNavOn {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #2E2E2E;
+    font-weight:bold;
+}
+
+a.visitorNavOn:link {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #2E2E2E;
+    font-weight:bold;
+}
+
+a.visitorNavOn:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #2E2E2E;
+    font-weight:bold;
+}
+
+a.footNav {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: #575757;
+    font-weight:bold;
+}
+
+a.footNav:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: #575757;
+    font-weight:bold;
+}
+
+a.footNav:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: #575757;
+    font-weight:bold;
+}
+
+a.footNavOn {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #575757;
+    font-weight:bold;
+}
+
+a.footNavOn:link {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #575757;
+    font-weight:bold;
+}
+
+a.footNavOn:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #575757;
+    font-weight:bold;
+}
+
+a.bodyTextLink {
+    text-decoration: none;
+    color: #0365FE;
+}
+
+a.bodyTextLink:link {
+    text-decoration: none;
+    color: #0365FE;
+}
+
+a.bodyTextLink:hover {
+    text-decoration: underline;
+    color: #0365FE;
+}
+
+a.bodyTextLinkSmall {
+    text-decoration: none;
+    color: #0365FE;
+    font-size: 11px;
+}
+
+a.bodyTextLinkSmall:link {
+    text-decoration: none;
+    color: #0365FE;
+    font-size: 11px;
+}
+
+a.bodyTextLinkSmall:hover {
+    text-decoration: underline;
+    color: #0365FE;
+    font-size: 11px;
+}
+
+a.bodyTextLinkBold {
+    text-decoration: none;
+    color: #0365FE;
+    font-weight: bold;
+}
+
+a.bodyTextLinkBold:link {
+    text-decoration: none;
+    color: #0365FE;
+    font-weight: bold;
+}
+
+a.bodyTextLinkBold:hover {
+    text-decoration: underline;
+    color: #0365FE;
+    font-weight: bold;
+}
+
+a.subNav {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #3D3D3D;
+}
+
+a.subNav:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #3D3D3D;
+}
+
+a.subNav:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #3D3D3D;
+}
+
+a.subNavBlue {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #1187E7;
+    font-weight:bold;
+}
+
+a.subNavBlue:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #1187E7;
+    font-weight:bold;
+}
+
+a.subNavBlue:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #1187E7;
+    font-weight:bold;
+}
+
+a.subNavBold {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #3D3D3D;
+    font-weight:bold;
+}
+
+a.subNavBold:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #3D3D3D;
+    font-weight:bold;
+}
+
+a.subNavBold:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #3D3D3D;
+    font-weight:bold;
+}
+
+a.utilitiesNav {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0365FE;
+    font-weight:bold;
+}
+
+a.utilitiesNav:link {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0365FE;
+    font-weight:bold;
+}
+
+a.utilitiesNav:hover {
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0365FE;
+    font-weight:bold;
+}
+
+.linePartition {
+    background: url(/images/line_patt_dot.gif) repeat-x center center;
+    height: 19px;
+    margin : 0;
+    width: 100%;
+}
+
+ul.home {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    right: 1.5em;
+    position: relative;
+    list-style-image: url(/images/bullet.gif);
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    right: 1.5em;
+    position: relative;
+    list-style-image: url(/images/bullet.gif);
+}
+
+ul ul {
+    margin-bottom: 0px;
+    list-style-image: url(/images/bullet_indent.gif);
+}
+
+ul ul ul {
+    margin-bottom: 0px;
+    list-style-image: url(/images/bullet_indent.gif);
+}
+
+ul.docNav {
+    line-height: 12px;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    list-style-type: none;
+    list-style-image: none;
+    margin-bottom: 0;
+}
+
+ul.docNav li {
+    margin-bottom: 9px;
+
+}
+
+
+/* ------------------------------------------ Stuff for fly.faa.gov ------------------------------------------- */
+
+dd {
+    padding-bottom: 10px;
+}
+
+.TSAalert {
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #FF8000;
+    font-weight: bold;
+}
+
+.mainArea {
+    width: 100%;
+    text-align: left;
+    padding: 0px 10px;
+    margin: 0px;
+}
+#regionSelector {
+    float: left;
+}
+#textOnly {
+    float: right;
+}
+#warningMessage {
+    margin: 4px 0px;
+    padding: 5px;
+    background-color: #CCCCCC;
+    text-align: left;
+}
+.spacer {
+    clear: both;
+    height: 5px;
+}
+ul.legend li {
+    padding-bottom: 0px;
+    margin-bottom: 4px;
+}
+ul.airplaneList {
+    list-style: outside url(/images/planeBullet2.gif);
+}
+ul.airplaneList li {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    margin: 0px;
+}
+ul.productsList {
+    list-style: outside url(/images/planeBullet2.gif);
+}
+ul.productsList li {
+    padding-bottom: .5em;
+    padding-top: .5em;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    border-bottom: 1px dashed #6B799E;
+}
+
+ul.productsList li .what {
+    font-weight: bold;
+}
+ul.productsList li .date {
+    color: #999999;
+}
+ul.productsList li .description {
+
+}
+
+ul.productsList li li {
+    padding-bottom: .1em;
+    border: 0px none;
+}
+
+ol.productsList {
+    list-style: lower-alpha
+}
+ol.productsList li {
+        padding-bottom: .5em;
+        padding-top: .5em;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
+}
+
+acronym {
+    text-decoration: none;
+    border: 0 none;
+    color: #666666;
+}
+
+#frmFeedback input {
+    width: 300px;
+}
+#frmFeedback textarea {
+    width: 300px;
+    height: 150px;
+}
+#frmFeedback input.btnSend {
+    width: 50px;
+}
+
+/* Same as the body text link above, but I'm not adding that to every link */
+.mainArea a, .mainArea a acronym {
+    text-decoration: none;
+    color: #0365FE;
+}
+.mainArea a:link, .mainArea a:link acronym {
+    text-decoration: none;
+    color: #0365FE;
+}
+.mainArea a:hover, .mainArea a:hover acronym {
+    text-decoration: underline;
+    color: #0365FE;
+}
+
+/* Header info */
+#hdr_title {
+    float: left;
+    border: 0;
+    margin: 0;
+    width: 50%;
+}
+#hdr_menu {
+    float: right;
+    border: 0;
+    margin: 0;
+    width: 48%;
+    text-align: right;
+}
+#airportLookup {
+    text-align: right;
+}
+.headAppPatt {
+    background-image: url(/images/head_app_patt.gif);
+    background-repeat: repeat-x;
+}
+
+/* Sitemap specifics */
+.siteMap li {
+    list-style-type: none;
+    Padding-bottom: 1.2em;
+
+}
+.siteMap li li {
+    font-size: .9em;
+    padding-bottom: .3em;
+}
+.siteMap li li a:link {
+    color: #666666;
+}
+.siteMap li li li {
+    font-size: .8em;
+    padding-bottom: .1em;
+}
+.siteMap li li li a:link {
+    color: #999999;
+}
+
+#rightColumn {
+    float: right;
+    width: 340px;
+}
+#leftColumn {
+    float: left;
+    width: 340px;
+}
+ /*Application Specifics */
+ .appNavigationLinks, .appNavigationLinks a:link, .appNavigationLinks a:visited {
+    text-decoration: none;
+    color: orange;
+ }
+.appNavigationLinks a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    border: 1px solid orange;
+    padding: 7px;
+}
+
+/* These have been pulled in from usmap.css */
+.menu { position:absolute;
+        visibility:hidden;
+        color: black;
+        width: 350px;
+        height: auto;
+        border-style: solid;
+        border-color: #808080;
+        border-width: 1px;
+        padding: 2px;
+        font-size : 16px;
+        font-family: "arial", "verdana", "helvetica", "sans-serif";
+        font-weight: bold;
+        line-height: 20px;}
+.menu A:hover {color: WHITE;}
+.menu A {text-decoration: none; color: black;}
+.menu6 { position:absolute;
+        top: 1200px;
+        left: 1200px;
+        visibility:visible;
+        z-index: 1; }

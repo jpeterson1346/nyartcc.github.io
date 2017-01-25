@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+    color: black;
+}
+
+th {
+    color: #000099;
+    background-color : #CCCCCC;
+    font-family : arial, sans-serif;
+    font-weight: 500;
+}
+
+th.caption {
+    text-align: center;
+    background-color: #99CCCC;
+    color: #000099;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.warning {
+    background-color: #FFFF99;
+    color: #000000;
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+    font-weight: 500;
+}
+
+.adv {
+    font-size: smaller
+}
+
+.header {
+    font-weight: bold;
+}
+
+td {
+    color: black;
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+td.data {
+    color : black;
+    background-color : #FFFFCC;
+    text-align: center;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+}
+
+td.regular {
+    text-align: left;
+}
+
+td.nam {
+    text-align: right;
+}
+
+td.val {
+    text-align: left;
+    font-family: Courier,fixed;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+ol {
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+}
+
+ol.SecondOrder {
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+    list-style-type: lower-alpha;
+}
+
+ol.ThirdOrder {
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+    list-style-type: lower-roman;
+}
+
+ul.SecondOrder {
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+    list-style-type: disc;
+}
+
+ul.ThirdOrder {
+    font-family: Verdana,Tahoma,Arial,Helvetica;
+    list-style-type: circle;
+}
+
+pre {
+    font-weight: bold;
+}
